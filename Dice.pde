@@ -1,10 +1,14 @@
+Die Celestia = new Die(150,150);
+Die Ludenberg = new Die(300,300);
 void setup()
 {
 	noLoop();
+  size(500,500);
 }
 void draw()
 {
-	//your code here
+	Celestia.show();
+  Ludenberg.show();
 }
 void mousePressed()
 {
@@ -12,11 +16,13 @@ void mousePressed()
 }
 class Die //models one single dice cube
 {
-	//variable declarations here
+	int mySize, myX, myY;
 	
 	Die(int x, int y) //constructor
 	{
-		//variable initializations here
+		mySize = 60;
+    myX = x;
+    myY = y;
 	}
 	void roll()
 	{
@@ -24,6 +30,10 @@ class Die //models one single dice cube
 	}
 	void show()
 	{
-		//your code here
+    noStroke();
+		fill(255);
+    rect(myX, myY, mySize, mySize);
+    fill(0);
+    ellipse(myX+mySize/2, myY+mySize/2, mySize/8, mySize/8);
 	}
 }
