@@ -5,12 +5,65 @@ void setup()
 }
 void draw()
 {
+  int sum = 0;
   for (int num = 50; num < 750; num = num + 150)
   {
-    Die Ludenberg = new Die(num, 100);
+    Die Celestia = new Die(num, 100);
+    Celestia.show();
+    Celestia.roll();
+    Die Ludenberg = new Die(num, 300);
     Ludenberg.show();
     Ludenberg.roll();
+    if (Celestia.prob == 1)
+    {
+       sum=sum+1; 
+    }
+    else if (Celestia.prob == 2)
+    {
+       sum=sum+2;
+    }
+    else if (Celestia.prob == 3)
+    {
+       sum=sum+3; 
+    }
+    else if (Celestia.prob == 4)
+    {
+       sum=sum+4; 
+    }
+    else if (Celestia.prob == 5)
+    {
+       sum=sum+5; 
+    }
+    else
+    {
+       sum=sum+6; 
+    }
+        if (Ludenberg.prob == 1)
+    {
+       sum=sum+1; 
+    }
+    else if (Ludenberg.prob == 2)
+    {
+       sum=sum+2;
+    }
+    else if (Ludenberg.prob == 3)
+    {
+       sum=sum+3; 
+    }
+    else if (Ludenberg.prob == 4)
+    {
+       sum=sum+4; 
+    }
+    else if (Ludenberg.prob == 5)
+    {
+       sum=sum+5; 
+    }
+    else
+    {
+       sum=sum+6; 
+    }
   }
+  text("Your total is " + sum, 400,400);
 }
 void mousePressed()
 {
