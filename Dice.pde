@@ -1,69 +1,48 @@
+PImage img1;
 void setup()
 {
   noLoop();
   size(800,500);
+  img1 = loadImage("celes1.png");
 }
 void draw()
 {
+  bg();
   int sum = 0;
-  for (int num = 50; num < 750; num = num + 150)
+  for (int j = 50; j < 750; j = j + 150)
   {
-    Die Celestia = new Die(num, 100);
+    for (int k = 100; k < 350; k = k + 200)
+    {
+    Die Celestia = new Die(j, k);
     Celestia.show();
     Celestia.roll();
-    Die Ludenberg = new Die(num, 300);
-    Ludenberg.show();
-    Ludenberg.roll();
-    if (Celestia.prob == 1)
-    {
-       sum=sum+1; 
-    }
-    else if (Celestia.prob == 2)
-    {
-       sum=sum+2;
-    }
-    else if (Celestia.prob == 3)
-    {
-       sum=sum+3; 
-    }
-    else if (Celestia.prob == 4)
-    {
-       sum=sum+4; 
-    }
-    else if (Celestia.prob == 5)
-    {
-       sum=sum+5; 
-    }
-    else
-    {
-       sum=sum+6; 
-    }
-        if (Ludenberg.prob == 1)
-    {
-       sum=sum+1; 
-    }
-    else if (Ludenberg.prob == 2)
-    {
-       sum=sum+2;
-    }
-    else if (Ludenberg.prob == 3)
-    {
-       sum=sum+3; 
-    }
-    else if (Ludenberg.prob == 4)
-    {
-       sum=sum+4; 
-    }
-    else if (Ludenberg.prob == 5)
-    {
-       sum=sum+5; 
-    }
-    else
-    {
-       sum=sum+6; 
+      if (Celestia.prob == 1)
+      {
+         sum=sum+1; 
+      }
+      else if (Celestia.prob == 2)
+      {
+         sum=sum+2;
+      }
+      else if (Celestia.prob == 3)
+      {
+         sum=sum+3; 
+      }
+      else if (Celestia.prob == 4)
+      {
+         sum=sum+4; 
+      }
+      else if (Celestia.prob == 5)
+      {
+         sum=sum+5; 
+      }
+      else
+      {
+         sum=sum+6; 
+      }
     }
   }
-  text("Your total is " + sum, 400,400);
+  text("Total: " + sum, 350,400);
 }
 void mousePressed()
 {
@@ -129,4 +108,8 @@ void show()
     fill(255);
     rect(myX, myY, mySize, mySize, 15);
   }
+}
+void bg() 
+{
+   image(img1, 75, 50); 
 }
