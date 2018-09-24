@@ -51,8 +51,6 @@ void draw()
       celes(sum);
     }
   }
-  color(0);
-  text("Total: " + sum, 350,450);
 }
 void mousePressed()
 {
@@ -131,7 +129,10 @@ void celes(int sum)
      fill(#6F082F);
      rect(750,0,550,500);
      image(img3, 750, -75);
+     fill(#245D08);
+     rect(
      fill(0);
+     text(sum + "? ", 400, 350);
    }
    else if (sum > 30 && sum < 40) //31-39 (apathy)
    {
@@ -140,7 +141,7 @@ void celes(int sum)
      image(img5, 750, 0);
      fill(0);
    }
-   else if (sum >= 40 && sum < 44) //40-43 (consideratio)
+   else if (sum >= 40 && sum < 44) //40-43 (consideration)
    {
      fill(#6F082F);
      rect(750,0,550,500);
