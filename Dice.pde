@@ -3,15 +3,15 @@ void setup()
 {
   noLoop();
   size(1300,500);
-  img1 = loadImage("data\celes1.png");
-  img2 = loadImage("data\celes2.png");
-  img3 = loadImage("data\celes3.png");
+  img1 = loadImage("data/celes1.png");
+  img2 = loadImage("data/celes2.png");
+  img3 = loadImage("data/celes3.png");
   img3.resize(600,580);
-  img4 = loadImage("data\celes4.png");
+  img4 = loadImage("data/celes4.png");
   img4.resize(550,550);
-  img5 = loadImage("data\celes5.png");
+  img5 = loadImage("data/celes5.png");
   img5.resize(500,500);
-  img6 = loadImage("data\celes6.png");
+  img6 = loadImage("data/celes6.png");
 }
 void draw()
 {
