@@ -127,7 +127,7 @@ void celes(int sum)
    if (sum <= 30) //30 or below (disgust)
    {
      fill(#6F082F);
-     rect(750,0,550,500);
+     rect(751,0,549,500);
      image(img3, 750, -75);
      fill(#245D08);
      rect(21,400,709,80);
@@ -151,7 +151,7 @@ void celes(int sum)
    else if (sum > 30 && sum < 40) //31-39 (apathy)
    {
      fill(#6F082F);
-     rect(750,0,550,500);
+     rect(751,0,549,500);
      image(img5, 750, 0);
      fill(#245D08);
      rect(21,400,709,80);
@@ -175,7 +175,7 @@ void celes(int sum)
    else if (sum >= 40 && sum < 44) //40-43 (consideration)
    {
      fill(#6F082F);
-     rect(750,0,550,500);
+     rect(751,0,549,500);
      image(img4, 750, 0);
      fill(#245D08);
      rect(21,400,709,80);
@@ -199,7 +199,7 @@ void celes(int sum)
    else if (sum == 44) //44 (surprise)
    {
      fill(#6F082F);
-     rect(750,0,550,500);
+     rect(751,0,549,500);
      image(img1, 750, 0);
      fill(#245D08);
      rect(21,400,709,80);
@@ -223,7 +223,7 @@ void celes(int sum)
    else if (sum > 44 && sum < 47) //45-46 (curiosity)
    {
      fill(#6F082F);
-     rect(750,0,550,500);
+     rect(751,0,549,500);
      image(img6, 750,40);
      fill(#245D08);
      rect(21,400,709,80);
@@ -247,7 +247,7 @@ void celes(int sum)
    else if (sum >= 47) //47-60 (precious)
    {
      fill(#6F082F);
-     rect(750,0,550,500);
+     rect(751,0,549,500);
      image(img2, 750, 0);
      fill(#245D08);
      rect(21,400,709,80);
