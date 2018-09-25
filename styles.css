@@ -8,6 +8,8 @@ body {
 
 #content {
     display: block;
+	margin-left:none;
+	margin-right:none;
 }
 
 header {
