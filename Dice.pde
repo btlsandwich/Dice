@@ -123,51 +123,150 @@ void show()
 }
 void celes(int sum)
 {
-   fill(0);
+   textSize(19);
    if (sum <= 30) //30 or below (disgust)
    {
      fill(#6F082F);
      rect(750,0,550,500);
      image(img3, 750, -75);
      fill(#245D08);
-     rect(
-     fill(0);
-     text(sum + "? ", 400, 350);
+     rect(21,400,709,80);
+     fill(0,0,0,120);
+     rect(26,415,699,60,10);
+     fill(#FFCF4B);
+     beginShape();
+       vertex(670,440);
+       vertex(670,450);
+       vertex(690,450);
+       vertex(690,455);
+       vertex(715,445);
+       vertex(690,435);
+       vertex(690,440);
+     endShape();
+     fill(255);
+     text("CELESTIA: ", 30, 450);
+     textSize(17);
+     text("\"" + sum + "? What horrible luck! Get away!\"", 125, 450);
    }
    else if (sum > 30 && sum < 40) //31-39 (apathy)
    {
      fill(#6F082F);
      rect(750,0,550,500);
      image(img5, 750, 0);
-     fill(0);
+     fill(#245D08);
+     rect(21,400,709,80);
+     fill(0,0,0,120);
+     rect(26,415,699,60,10);
+     fill(#FFCF4B);
+     beginShape();
+       vertex(670,440);
+       vertex(670,450);
+       vertex(690,450);
+       vertex(690,455);
+       vertex(715,445);
+       vertex(690,435);
+       vertex(690,440);
+     endShape();
+     fill(255);
+     text("CELESTIA: ", 30, 450);
+     textSize(17);
+     text("\"" + sum + "? Boring. Come back when you're better.\"", 125, 450);
    }
    else if (sum >= 40 && sum < 44) //40-43 (consideration)
    {
      fill(#6F082F);
      rect(750,0,550,500);
      image(img4, 750, 0);
-     fill(0);
+     fill(#245D08);
+     rect(21,400,709,80);
+     fill(0,0,0,120);
+     rect(26,415,699,60,10);
+     fill(#FFCF4B);
+     beginShape();
+       vertex(670,440);
+       vertex(670,450);
+       vertex(690,450);
+       vertex(690,455);
+       vertex(715,445);
+       vertex(690,435);
+       vertex(690,440);
+     endShape();
+     fill(255);
+     text("CELESTIA: ", 30, 450);
+     textSize(17);
+     text("\"" + sum + "? You might win a couple bucks with that.\"", 125, 450);
    }
    else if (sum == 44) //44 (surprise)
    {
      fill(#6F082F);
      rect(750,0,550,500);
      image(img1, 750, 0);
-     fill(0);
+     fill(#245D08);
+     rect(21,400,709,80);
+     fill(0,0,0,120);
+     rect(26,415,699,60,10);
+     fill(#FFCF4B);
+     beginShape();
+       vertex(670,440);
+       vertex(670,450);
+       vertex(690,450);
+       vertex(690,455);
+       vertex(715,445);
+       vertex(690,435);
+       vertex(690,440);
+     endShape();
+     fill(255);
+     text("CELESTIA: ", 30, 450);
+     textSize(17);
+     text("\"44? That's the number of death, you know. Most impressive.\"", 125, 450);
    }
    else if (sum > 44 && sum < 47) //45-46 (curiosity)
    {
      fill(#6F082F);
      rect(750,0,550,500);
      image(img6, 750,40);
-     fill(0);
+     fill(#245D08);
+     rect(21,400,709,80);
+     fill(0,0,0,120);
+     rect(26,415,699,60,10);
+     fill(#FFCF4B);
+     beginShape();
+       vertex(670,440);
+       vertex(670,450);
+       vertex(690,450);
+       vertex(690,455);
+       vertex(715,445);
+       vertex(690,435);
+       vertex(690,440);
+     endShape();
+     fill(255);
+     text("CELESTIA: ", 30, 450);
+     textSize(17);
+     text("\"" + sum + "? Interesting. You might just have a shot at victory.\"", 125, 450);
    }
    else if (sum >= 47) //47-60 (precious)
    {
      fill(#6F082F);
      rect(750,0,550,500);
      image(img2, 750, 0);
-     fill(0);
+     fill(#245D08);
+     rect(21,400,709,80);
+     fill(0,0,0,120);
+     rect(26,415,699,60,10);
+     fill(#FFCF4B);
+     beginShape();
+       vertex(670,440);
+       vertex(670,450);
+       vertex(690,450);
+       vertex(690,455);
+       vertex(715,445);
+       vertex(690,435);
+       vertex(690,440);
+     endShape();
+     fill(255);
+     text("CELESTIA: ", 30, 450);
+     textSize(17);
+     text("\"" + sum + "? Looks like you've beaten me! Congratulations!\"", 125, 450);
    }
 }
 void bg()
