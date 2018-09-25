@@ -146,7 +146,7 @@ void celes(int sum)
      fill(255);
      text("CELESTIA: ", 30, 450);
      textSize(17);
-     text("\"" + sum + "? What horrible luck! Get away!\"", 125, 450);
+     text("\"" + sum + "? What horrible luck! Get away!\"", 130, 450);
    }
    else if (sum > 30 && sum < 40) //31-39 (apathy)
    {
@@ -170,7 +170,7 @@ void celes(int sum)
      fill(255);
      text("CELESTIA: ", 30, 450);
      textSize(17);
-     text("\"" + sum + "? Boring. Come back when you're better.\"", 125, 450);
+     text("\"" + sum + "? Boring. Come back when you're better.\"", 130, 450);
    }
    else if (sum >= 40 && sum < 44) //40-43 (consideration)
    {
@@ -194,7 +194,7 @@ void celes(int sum)
      fill(255);
      text("CELESTIA: ", 30, 450);
      textSize(17);
-     text("\"" + sum + "? You might win a couple bucks with that.\"", 125, 450);
+     text("\"" + sum + "? You might win a couple bucks with that.\"", 130, 450);
    }
    else if (sum == 44) //44 (surprise)
    {
@@ -218,7 +218,7 @@ void celes(int sum)
      fill(255);
      text("CELESTIA: ", 30, 450);
      textSize(17);
-     text("\"44? That's the number of death, you know. Most impressive.\"", 125, 450);
+     text("\"44? That's the number of death, you know. Most impressive.\"", 130, 450);
    }
    else if (sum > 44 && sum < 47) //45-46 (curiosity)
    {
@@ -242,7 +242,7 @@ void celes(int sum)
      fill(255);
      text("CELESTIA: ", 30, 450);
      textSize(17);
-     text("\"" + sum + "? Interesting. You might just have a shot at victory.\"", 125, 450);
+     text("\"" + sum + "? Interesting. You might just have a shot at victory.\"", 130, 450);
    }
    else if (sum >= 47) //47-60 (precious)
    {
