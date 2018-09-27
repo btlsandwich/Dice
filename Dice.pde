@@ -178,7 +178,7 @@ void celes(int sum)
    {
      image(img2, 750, 0);
      textSize(17);
-     text("\"" + sum + "? Looks like you've beaten me! Congratulations!\"", 125, 450);
+     text("\"" + sum + "? Looks like you've beaten me! Congratulations!\"", 130, 450);
    }
 }
 void bg()
