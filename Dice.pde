@@ -9,6 +9,7 @@ void setup()
   img4 = loadImage("data/celes4.png");
   img5 = loadImage("data/celes5.png");
   img6 = loadImage("data/celes6.png");
+}
 void draw()
 {
   int sum = 0;
