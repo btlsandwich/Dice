@@ -3,13 +3,12 @@ void setup()
 {
   noLoop();
   size(1300,500);
-  img1 = loadImage("celes1.png");
-  img2 = loadImage("celes2.png");
-  img3 = loadImage("celes3.png");
-  img4 = loadImage("celes4.png");
-  img5 = loadImage("celes5.png");
-  img6 = loadImage("celes6.png");
-}
+  img1 = loadImage("data/celes1.png");
+  img2 = loadImage("data/celes2.png");
+  img3 = loadImage("data/celes3.png");
+  img4 = loadImage("data/celes4.png");
+  img5 = loadImage("data/celes5.png");
+  img6 = loadImage("data/celes6.png");
 void draw()
 {
   int sum = 0;
